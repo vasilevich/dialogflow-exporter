@@ -1,6 +1,6 @@
 {
   "name": "dialogflow-exporter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Convert dialogflow exported zip into a js object for use in other applications for example node-nlp",
   "main": "./lib/index.js",
   "typings": "./lib/index.d.ts",

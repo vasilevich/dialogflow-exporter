@@ -33,7 +33,7 @@ class Agent {
             this._intents.push(
                 new Intent(
                     name,
-                    intentUserSays.map(({data}) => data[0]).map((text, alias, meta) => ({text, alias, meta})),
+                    intentUserSays.map(({data}) => data[0]).map(({id, text, alias, meta}) => ({id, text, alias, meta})),
                     response));
         }
         this.zip.zipClose();
