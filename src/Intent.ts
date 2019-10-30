@@ -17,15 +17,15 @@ class Intent {
 
     private _name: string;
     private _userSays: IUserSay[];
-    private _response: IResponse[];
+    private _response: IResponse;
 
-    public constructor(name: string, userSays: IUserSay[], responses: IResponse[]) {
+    public constructor(name: string, userSays: IUserSay[], response: IResponse) {
         this._name = name;
         this._userSays = userSays;
-        this._response = responses;
+        this._response = response;
     }
 
-    get response(): IResponse[] {
+    get response(): IResponse {
         return this._response;
     }
 

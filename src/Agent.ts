@@ -27,9 +27,9 @@ class Agent {
             const {payload, lang, speech} = responses.map(response => response.messages[0])[0];
             const response: any = {lang};
             if (payload)
-                responses.payload = payload;
+                response.payload = payload;
             if (speech)
-                responses.speech = speech;
+                response.speech = speech;
             this._intents.push(
                 new Intent(
                     name,
