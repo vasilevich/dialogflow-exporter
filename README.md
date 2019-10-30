@@ -15,7 +15,7 @@ npm install -g dialogflow-exporter
 ## Usage
 ### Step 1 - get the zip file exported from dialogflow
 export dialogflow .zip archive   
-![how to extract dialogflow zip]instructions/extractDialogflowZip.png)
+![how to extract dialogflow zip](https://github.com/vasilevich/dialogflow-exporter/blob/master/instructions/extractDialogflowZip.png?raw=true "how to extract dialogflow zip")
 
 ### Step 2 - use the library to convert it to a js object
 put the file at the root (or anywhere you want)   
