@@ -1,0 +1,42 @@
+{
+  "name": "dialogflow-exporter",
+  "version": "1.0.0",
+  "description": "Convert dialogflow exported zip into a js object for use in other applications for example node-nlp",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "scripts": {
+    "compile": "rimraf lib/ && tsc"
+  },
+  "preferGlobal": "true",
+  "bin": {
+    "dialogflow-exporter": "./lib/index.js"
+  },
+  "keywords": [
+    "typescript",
+    "node",
+    "modules"
+  ],
+  "files": [
+    "lib",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vasilevich/dialogflow-exporter"
+  },
+  "bugs": {
+    "url": "https://github.com/vasilevich/dialogflow-exporter/issues"
+  },
+  "author": "Yosef Langer",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/glob": "^7.1.1",
+    "@types/node": "12.6.3",
+    "rimraf": "^2.6.3",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "node-stream-zip": "^1.8.2"
+  }
+}
